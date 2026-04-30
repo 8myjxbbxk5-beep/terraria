@@ -7,43 +7,30 @@
 		
 		<script src="https://cdn.jsdelivr.net/npm/coi-serviceworker@0.1.7/base-scripts/coi-serviceworker.min.js"></script>
 		
-		<meta property="og:title" content="Terraria" />
-		<meta
-			property="og:description"
-			content=""
-		/>
-		<meta
-			name="description"
-			content=""
-		/>
+		<title>Terraria</title>
 		<style>
 			html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#game-container, iframe, canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: black;
+			}
+			#canvas {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
 		</style>
-		<link rel="canonical" href="https://terraria.mercurywork.shop" />
-		<title>Terraria</title>
 		<script type="module" crossorigin src="main.js"></script>
 	</head>
 
 	<body>
 		<div id="app"></div>
-		<canvas id="canvas" style="width: 100%">
-
-		</canvas>
+		<canvas id="canvas"></canvas>
 	</body>
 </html>
